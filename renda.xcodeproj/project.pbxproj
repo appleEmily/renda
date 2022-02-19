@@ -16,6 +16,8 @@
 		A173861F279FF0D2002AD0F3 /* rendaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A173861E279FF0D2002AD0F3 /* rendaTests.swift */; };
 		A1738629279FF0D2002AD0F3 /* rendaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1738628279FF0D2002AD0F3 /* rendaUITests.swift */; };
 		A173862B279FF0D2002AD0F3 /* rendaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A173862A279FF0D2002AD0F3 /* rendaUITestsLaunchTests.swift */; };
+		A189E53727BF5CEA00C0E06A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A189E53627BF5CEA00C0E06A /* FirebaseFirestore */; };
+		A1B0D82527C1488F00F3749D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1B0D82427C1488F00F3749D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		A1738624279FF0D2002AD0F3 /* rendaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rendaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1738628279FF0D2002AD0F3 /* rendaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rendaUITests.swift; sourceTree = "<group>"; };
 		A173862A279FF0D2002AD0F3 /* rendaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rendaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1B0D82427C1488F00F3749D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A189E53727BF5CEA00C0E06A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,7 @@
 				A1738610279FF0D2002AD0F3 /* Assets.xcassets */,
 				A1738612279FF0D2002AD0F3 /* LaunchScreen.storyboard */,
 				A1738615279FF0D2002AD0F3 /* Info.plist */,
+				A1B0D82427C1488F00F3749D /* GoogleService-Info.plist */,
 			);
 			path = renda;
 			sourceTree = "<group>";
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = renda;
+			packageProductDependencies = (
+				A189E53627BF5CEA00C0E06A /* FirebaseFirestore */,
+			);
 			productName = renda;
 			productReference = A1738604279FF0D0002AD0F3 /* renda.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = A17385FB279FF0D0002AD0F3;
+			packageReferences = (
+				A189E53527BF5CEA00C0E06A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A1738605279FF0D0002AD0F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1738614279FF0D2002AD0F3 /* LaunchScreen.storyboard in Resources */,
+				A1B0D82527C1488F00F3749D /* GoogleService-Info.plist in Resources */,
 				A1738611279FF0D2002AD0F3 /* Assets.xcassets in Resources */,
 				A173860F279FF0D0002AD0F3 /* Main.storyboard in Resources */,
 			);
@@ -452,7 +464,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.renda;
+				PRODUCT_BUNDLE_IDENTIFIER = rendaEmily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -480,7 +492,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.renda;
+				PRODUCT_BUNDLE_IDENTIFIER = rendaEmily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -604,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A189E53527BF5CEA00C0E06A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A189E53627BF5CEA00C0E06A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A189E53527BF5CEA00C0E06A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A17385FC279FF0D0002AD0F3 /* Project object */;
 }

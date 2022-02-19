@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1021491640377-rg1v2m3phcq93grvj7iq7u2tb3ajaoi3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1021491640377-rg1v2m3phcq93grvj7iq7u2tb3ajaoi3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDtt8ePV6WxrFsaj5Pb1D1iZ6806lKTuCE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1021491640377</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>rendaEmily</string>
+	<key>PROJECT_ID</key>
+	<string>renda-b46dd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>renda-b46dd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1021491640377:ios:1be251018c6415208035e8</string>
+</dict>
+</plist>
